@@ -808,3 +808,18 @@ code {
 .pie-chart svg {
   max-width: 320px;
 }
+
+.button-outline{
+  background-color: rgb(107, 141, 107);
+  color: black;
+  font-size: 15px;
+}
+
+.navbar-inner{
+  background-color: (107, 141, 107);
+  color: rgb(56, 79, 56);
+}
+
+.page{
+ background-color: lightcyan ;
+}

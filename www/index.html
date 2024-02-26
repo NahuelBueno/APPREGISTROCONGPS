@@ -44,7 +44,9 @@
             <div class="navbar">
                 <div class="navbar-bg"></div>
                 <div class="navbar-inner">
-                    <div class="left"><i class="icon icon-back"></i></div>
+                    <div class="left">                        
+                        <a href="#" class="link back"><i class="icon icon-back"></i></a>
+                       </div>
                     <div class="title">Peces Marcados</div>
                     <!-- <div class="right"><i class="icon icon-forward"></i></div> -->
                 </div>
@@ -57,7 +59,7 @@
                             <a href="#" class="link"></a>
                             <a href="#" class="link"></a>
                             </div>
-                        </div>
+                            </div>
         
         <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page">
@@ -78,7 +80,7 @@
                                                   <div class="item-title item-label">E-mail</div>
                                                   <div class="item-input-wrap">
                                                     <input type="email" id="indexEmail" placeholder="Ingrese su e-mail">
-                                                    <span class="input-clear-button">Validación de e-mail</span>
+                                                    <span class="input-clear-button"></span>
                                                   </div>
                                                 </div>
                                               </li>
@@ -100,13 +102,18 @@
                                 </div>
 
                                 <div class="grid grid-cols-3 grid-gap">
-                                    <div><a href="/login/" class="button button-outline">Ya tengo usuario, quiero iniciar sesion.</a></div>
+                                    <div><a href="/login/" class="button button-outline">Iniciar sesion.</a></div>
                                 </div>
                                     <br><br>
                                 <div class="grid grid-cols-3 grid-gap">
                                     <div><button id="btnRegistro" class="button button-outline">Registrarme</button></div>
                                 </div>
                                     
+
+
+                                <div id="listaUsuarios">
+
+                                </div>
 
                         <!-- FIN DE DEMO -->
                         
@@ -120,9 +127,10 @@
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script> -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script> -->
 
     <script>
         // Your web app's Firebase configuration
